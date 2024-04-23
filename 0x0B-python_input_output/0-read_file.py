@@ -2,7 +2,6 @@
 """Read file module"""
 
 def read_file(filename=""):
-    """function that reads a file"""
-    with open(filename, 'r', encoding="utf-8") as file:
-        for line in file:
-            print(line, end='')
+    """function that reads a text file(UTF-8) and prints it to stdout"""
+    with open(filename, mode='r', encoding="utf-8") as my_file:
+        print(my_file.read(), end='')
